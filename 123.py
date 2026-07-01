@@ -112,7 +112,9 @@ Rules:
 5. For "add last 2 results", use the specific values shown in context, not the ANSWER token.
 6. For "subtract 20 from answer", output:
    {"op":"subtract","a":"ANSWER","b":20}
-7. IMPORTANT: "subtract above numbers" means subtract EACH of the above numbers separately as operations.
+7. IMPORTANT: "above numbers"/"above result" as a pair means a single operation using the stored pair directly:
+   {"op":"subtract","a":"ABOVE_NUMBERS","b":null}
+   Use the literal string "ABOVE_NUMBERS" for "a" and null for "b" — do NOT split it into two separate operations, and do NOT substitute the actual numeric values yourself.
 8. Return ONLY valid JSON. No explanation.
 """
 
