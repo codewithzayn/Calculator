@@ -117,7 +117,6 @@ Rules:
    Use the literal string "ABOVE_NUMBERS" for "a" and null for "b" — do NOT split it into two separate operations, and do NOT substitute the actual numeric values yourself.
 8. Return ONLY valid JSON. No explanation.
 """
-
     user_prompt = f"""
 Conversation Context:
 {conversation_context}
